@@ -10,7 +10,7 @@ from PIL import Image
 import imghdr
 
 # Устанавливаем путь к папке с изображениями
-data_path = Path('C:/Users/bahda/Downloads/archive/Real_AI_SD_LD_Dataset/train')  # Замените на фактический путь
+data_path = Path('C:/Users/bahda/Downloads/archive(2)')  # Замените на фактический путь
 
 # Пример функции для преобразования изображений в формат RGBA (если требуется)
 def convert_to_rgba(image_path):
@@ -80,7 +80,7 @@ model = Sequential([
 model.compile(optimizer=Adam(), loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Обучение модели
-epochs = 10
+epochs = 15
 history = model.fit(
     train_data_gen,
     validation_data=val_data_gen,
